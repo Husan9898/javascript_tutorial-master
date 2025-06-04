@@ -1,0 +1,46 @@
+<script>
+
+    //additional assignment operator
+    var total = 0;
+
+    total += 1;
+    total += 23;
+    total += 67;
+    total += 5;
+    total += 90;
+
+    console.log(total);
+
+
+    //Demonstrate logical operators
+    var a = 1;
+    var b = 2;
+
+    //AND operator needs both conditions to satisfy to true
+    if(a === 1 && b === 2){
+        console.log('Both conditions are true');
+    }
+
+    //OR operator.  this needs only one condition to evaluate to true
+    if(a === 1 || b === 3){
+        console.log('Only one condition evaluates to true');
+    }
+
+    //Negation/NOT operator.  condition that variable is not something.
+    if(a !== 6){
+        console.log('a is NOT six');
+    }
+
+
+    //nullish coalescing or null-aware operator.
+    const myText = "";
+
+    const notFalsyText = myText || 'Hello, World!';
+
+    console.log(notFalsyText); //Hello World
+
+    const preservingFalsy = myText ?? 'Hello, Universe';
+
+    console.log(preservingFalsy); //Hello World
+
+</script>
